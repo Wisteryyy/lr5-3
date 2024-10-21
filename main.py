@@ -1,3 +1,3 @@
-with open('text.txt', 'r') as file:
-    text = file.read()
-    print(f'Количество слов в тексте: {len(text.split())}')
+with open('text.txt', 'r') as file: #открываем файл с помощью open(), которое принимает 2 аргумента: название и режим ('r' это read, режи чтения)
+    text = file.read() # читает содержимое файла с помощью .read и сохраняет его в переменной text
+    print(f'Количество слов в тексте: {len(text.split())}') # .split делит строку по пробелам, а len показывает количество слов
